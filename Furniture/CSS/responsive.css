@@ -1,0 +1,633 @@
+/* Responsive for tablets and mobile */
+
+@media (max-width:1200px) {
+    .footer-inner {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px 20px;
+    }
+
+    .footer-content {
+        width: 25%;
+    }
+
+    .footer-content.footer-brand {
+        width: 25%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .navbar {
+        display: none;
+    }
+
+    .bars {
+        display: block;
+    }
+
+    .hero-section {
+        min-height: 300px;
+
+    }
+
+    .hero-inner {
+        min-height: 300px;
+
+    }
+
+    .overlay-outer {
+        min-height: 300px;
+
+    }
+
+    .overlay-outer .overlay {
+
+        min-height: 300px;
+
+    }
+
+    .overlay-image {
+        width: 480px;
+        height: 480px;
+        position: absolute;
+        top: -50px;
+        left: -35px;
+    }
+
+    .overlay-outer .overlay .hero-heading {
+        font-size: 2em;
+
+    }
+
+    .overlay-outer .overlay .hero-des {
+        width: 98%;
+        line-height: 18px;
+    }
+    .product-price p{
+        font-size: 14px;
+    }
+    .product-price h2{
+        font-size: 18px;
+    }
+}
+
+@media (max-width:992px) {
+    .overlay-outer {
+        flex-wrap: wrap;
+    }
+
+    .overlay-outer .overlay {
+        width: 98%;
+    }
+
+    .overlay-image {
+        height: auto;
+        width: auto;
+        position: absolute;
+        top: -40%;
+        left: 14%;
+    }
+
+    .overlay-image img {
+        object-position: center top;
+    }
+
+    .material-inner .material-card {
+        width: 49%;
+    }
+    .choose-inner{
+        flex-direction: column-reverse;
+        gap: 20px 0px;
+    }
+
+    .choose-content{
+        width:99%;
+    }
+    .choose-image{
+        width:99%;
+        height:400px;
+    }
+    .choose-image-bg{
+        display: none;
+    }
+    .morden-design-inner{
+        flex-wrap: wrap;
+    }
+    .morden-design-section{
+        padding: 30px 0px;
+    }
+    .morden-design-image{
+        width: 98%;
+    }
+    .morden-design-image .morden-design-outer.morden-image1,
+    .morden-design-image .morden-design-outer.morden-image2,
+    .morden-design-image .morden-design-outer.morden-image3
+    {
+        display: none;
+    }
+    .morden-design-content{
+        width: 98%;
+        padding-top: 20px;
+    }
+   .shop-img {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .shop-inner .image-shop {
+    width: 30%; 
+  }
+
+  
+  .shop-img .image-shop:nth-child(4) {
+    display: none;
+  }
+
+  .shop-inner .image-shop img {
+    height: 280px;
+    width: 100%;
+  }
+        .newsletter-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+      }
+
+      .newsletter-content h3 {
+        justify-content: center;
+      }
+
+      .newsletter-form {
+        justify-content: center;
+      }
+
+      .newsletter-image {
+        order: -1;
+      }
+   .newsletter-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .newsletter-content form {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .newsletter-image img {
+    width: 260px;
+  }
+    .blog-grid {
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .contact-info {
+    justify-content: center;
+  }
+  .checkout-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width:768px) {
+
+  .footer-content {
+        width: 46%;
+    }
+
+    .footer-content.footer-brand {
+        width: 46%;
+    }
+
+    .footer-content:last-child {
+        width: 98%;
+    }
+
+    .overlay-image {
+        top: -6%;
+        left: 0%;
+    }
+     .shop-img {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .shop-inner .image-shop {
+    width: 45%; 
+  }
+
+  .shop-inner .image-shop img {
+    height: 250px;
+    width: 100%;
+  }
+
+  
+  .shop-img .image-shop {
+    display: flex;
+  }
+   .team-section h2 {
+    font-size: 2rem;
+  }
+ .product-inner {
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  .product-card:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-width: 320px;
+  }
+  .team-member {
+    padding: 20px;
+  }
+  .blog-grid {
+    grid-template-columns: repeat(2, 2fr);
+  }
+   .product-inner {
+    justify-content: center;
+  }
+
+  .product-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-image img {
+    height: 140px;
+    width: 140px;
+  }
+
+  .product-price {
+    align-items: center;
+    padding: 10px 0;
+  }
+
+
+  .product-card:nth-child(3) {
+    margin: 0 auto;
+  }
+   .bFooter-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bFooter-right {
+    justify-content: center;
+  }
+
+  .bFooter-left p {
+    text-align: center;
+  }
+   .service-row {
+    grid-template-columns: repeat(2, 2fr);
+  }
+    .blog-grid {
+    grid-template-columns: repeat(2, 2fr);
+  }
+    .contact-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .contact-section {
+    padding: 60px 20px;
+  }
+    table th, table td {
+        font-size: 13px;
+        padding: 10px;
+      }
+
+      .cart-buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .cart-bottom {
+        flex-direction: column;
+      }
+
+      .coupon input {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .coupon button {
+        width: 100%;
+        margin: 0;
+      }
+
+      .login {
+        width: 90%;
+        height: auto;
+        padding: 30px 25px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input {
+        font-size: 14px;
+        height: 38px;
+    }
+
+    #captcha {
+        width: 65%;
+        font-size: 16px;
+        padding: 6px;
+    }
+
+    #refresh {
+        padding: 6px 15px;
+        font-size: 14px;
+        margin-left: 5px;
+    }
+
+    .submit-btn {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+@media(max-width:576px) {
+    .footer-inner {
+        min-height: 200px;
+
+
+    }
+
+    .footer-content:first-child {
+        padding-top: 30px;
+    }
+
+    .footer-content {
+        width: 98%;
+        min-height: 200px;
+        padding: 10px 0px;
+    }
+
+    .footer-content.footer-brand {
+        width: 98%;
+    }
+
+    .overlay-image {
+        top: 0%;
+
+    }
+
+    .material-inner .material-card {
+        width: 99%;
+        padding: 10px 0px;
+    }
+    .morden-design-image{
+        min-height: 300px;
+
+    }
+    .morden-design-image .morden-image-outer{
+        height: 300px;
+    }
+     .morden-design-image{
+        width: 98%;
+    }
+    .mordern-design-list ul li{
+        width: 98%;
+    }
+      .shop-img {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shop-inner .image-shop {
+    width: 90%; 
+  }
+
+  .shop-inner .image-shop img {
+    height: 220px;
+    width: 100%;
+  }
+
+  .shop-inner .image-shop h2 {
+    font-size: 1.2rem;
+  }
+
+  .shop-inner .image-shop p {
+    font-size: 1rem;
+  }
+   .team-section {
+    padding: 40px 10px;
+  }
+
+  .team-member h3 {
+    font-size: 1.1rem;
+  }
+
+  .team-member p {
+    font-size: 0.9rem;
+  }
+    .blog-grid {
+    grid-template-columns: 1fr;
+  }
+  .blog-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+   .product-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+   .product-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+  }
+
+  .product-image img {
+    height: 130px;
+    width: 130px;
+  }
+
+  .product-price {
+    align-items: center;
+    text-align: center;
+  }
+    .newsletter-content h3 {
+    font-size: 18px;
+  }
+
+  .newsletter-content input {
+    width: 100%;
+  }
+
+  .newsletter-content form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletter-image img {
+    width: 220px;
+  }
+   .service-row {
+    grid-template-columns: 1fr;
+  }
+
+  .icon {
+    height: 60px;
+    width: 60px;
+    font-size: 24px;
+  }
+    .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+   h1 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .icon-box {
+    width: 80px;
+    height: 80px;
+  }
+  .icon-box i.fa-cart-shopping {
+    font-size: 32px;
+  }
+}
+
+@media (max-width:425px) {
+    .max-width {
+        width: 100%;
+    }
+
+    .overlay-outer .overlay .hero-heading {
+        font-size: 1.2em;
+        padding: 20px 0px;
+    }
+
+    .overlay-outer .overlay .hero-des {
+        width: 100%;
+
+    }
+
+    .overlay-outer .overlay .hero-link {
+        padding: 3px 10px;
+        font-size: 10px;
+    }
+
+    .material-section,
+    .choose-section {
+        padding: 30px 0px;
+    }
+    .choose-image{
+        height:300px;
+    }
+    .choose-card-content {   
+    width: 99%;
+}
+ .morden-design-image{
+        width: 98%;
+    }
+.morden-design-section{
+    padding: 20xp 0px;
+}
+  .shop-img {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shop-inner .image-shop {
+    width: 90%; 
+  }
+
+  .shop-inner .image-shop img {
+    height: 220px;
+    width: 100%;
+  }
+
+  .shop-inner .image-shop h2 {
+    font-size: 1.2rem;
+  }
+
+  .shop-inner .image-shop p {
+    font-size: 1rem;
+  }
+   .team-section {
+    padding: 40px 10px;
+  }
+
+  .team-member h3 {
+    font-size: 1.1rem;
+  }
+
+  .team-member p {
+    font-size: 0.9rem;
+  }
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+  .blog-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+    .login {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+        padding: 10px 0;
+    }
+
+    input {
+        font-size: 13px;
+    }
+
+    #captcha {
+        width: 60%;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    #refresh {
+        padding: 5px 12px;
+        font-size: 13px;
+    }
+
+    .show-password {
+        top: 30%;
+        right: 4%;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+    .register-container{
+            width: 90%;
+            padding: 30px 20px;
+        }
+        h2{
+            font-size: 22px;
+        }
+}
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+ <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/owl.carousel.min.css">
+
+    <!-- Styles -->
+   
+    <link rel="stylesheet" href="CSS/style.css">
+      <link rel="stylesheet" href="CSS/register.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+</head>
+
+<body>
+ <div class="loader">
+    <div class="spinner"></div>
+    <p class="loading-text">Loading...</p>
+  </div>
+
+<div class="register-container">
+    <h2>Create Account</h2>
+    <form id="registerForm" onsubmit="handleRegister(event)">
+        <div class="form-group">
+            <input type="text" id="name" placeholder="Full Name" required>
+        </div>
+
+        <div class="form-group">
+            <input type="email" id="email" placeholder="Email Address" required>
+        </div>
+
+        <div class="form-group">
+            <input type="tel" id="mobile" placeholder="Mobile Number" pattern="[0-9]{10}" required>
+        </div>
+
+        <div class="form-group password-box">
+            <input type="password" id="password" placeholder="Password" required>
+            <i class="fa-solid fa-eye" onclick="togglePassword()"></i>
+        </div>
+
+        <div class="form-group">
+            <select id="country" required>
+                <option value="">Select Country</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Canada</option>
+                <option>Australia</option>
+            </select>
+        </div>
+
+        <div class="captcha-box">
+            <span id="captcha-text"></span>
+            <button type="button" id="refresh" onclick="generateCaptcha()">
+                <i class="fa-solid fa-arrows-rotate"></i>
+            </button>
+        </div>
+
+        <div class="form-group">
+            <input type="text" id="captcha-input" placeholder="Enter Captcha" required>
+        </div>
+
+        <a href="Login.html" class="btn-link" onclick="handleRegister(event)">Register</a>
+
+        <p>Already have an account? <a href="Login.html">Login</a></p>
+    </form>
+</div>
+
+
+ <!-- JS -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

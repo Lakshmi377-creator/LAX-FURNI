@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Typewriter — Advanced</title>
+  <style>
+    body { display:flex; align-items:center; justify-content:center; height:100vh; margin:0;
+           background:#0b1220; color:#e6eef6; font-family:Inter, Roboto, system-ui; }
+    .typewrap { font-size:1.8rem; }
+    .cursor { display:inline-block; width:0.8ch; animation:blink 1s steps(1) infinite; margin-left:6px; color:#60a5fa; }
+    @keyframes blink { 50% { opacity:0; } }
+    .muted { display:block; font-size:0.9rem; color:#9aa7b2; margin-top:8px; }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="typewrap" aria-live="polite">
+      <span id="typed"></span><span class="cursor">▌</span>
+    </div>
+    <div class="muted">Tip: change strings & speeds in the script below</div>
+  </div>
+
+  <script>
+    // Config
+    const strings = [
+      "Frontend developer.",
+      "JavaScript enthusiast.",
+      "Building beautiful UI animations.",
+      "Learning something new every day."
+    ];
+    const typingSpeed = 80;     // ms per char when typing
+    const deletingSpeed = 40;   // ms per char when deleting
+    const holdDelay = 1200;     // ms to pause when a string fully typed
+    const loop = true;          // set false to stop after one cycle
+
+    // State
+    const el = document.getElementById('typed');
+    let strIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function tick() {
+      const current = strings[strIndex];
+      if (!isDeleting) {
+        // Type forward
+        el.textContent = current.slice(0, charIndex + 1);
+        charIndex++;
+        if (charIndex === current.length) {
+          // finished typing; pause then start deleting
+          isDeleting = true;
+          setTimeout(tick, holdDelay);
+          return;
+        }
+        setTimeout(tick, typingSpeed);
+      } else {
+        // Delete
+        el.textContent = current.slice(0, charIndex - 1);
+        charIndex--;
+        if (charIndex === 0) {
+          isDeleting = false;
+          strIndex = (strIndex + 1) % strings.length;
+          if (!loop && strIndex === 0) return; // stop if not looping
+          setTimeout(tick, 300);
+          return;
+        }
+        setTimeout(tick, deletingSpeed);
+      }
+    }
+
+    // Start
+    setTimeout(tick, 500);
+  </script>
+</body>
+</html>

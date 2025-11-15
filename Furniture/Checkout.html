@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <link rel="stylesheet" href="CSS/checkout.css">
+ <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/owl.carousel.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+</head>
+
+<body>
+ <div class="loader">
+    <div class="spinner"></div>
+    <p class="loading-text">Loading...</p>
+  </div>
+    <!-- Header Start -->
+    <header class="header" id="header">
+        <div class="max-width header-inner">
+            <div class="logo">
+                <a class="logo-link" href="index.html">
+                    <span>Tiwari</span><span>F<i class="fa-solid fa-couch"></i>rnit<i class="fa-solid fa-couch"></i>re </span>
+                </a>
+            </div>
+            <nav class="navbar">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="Shop.html" class="nav-link">Shop</a>
+                <a href="About.html" class="nav-link">About Us</a>
+                <a href="Services.html" class="nav-link">Services</a>
+                <a href="Blog.html" class="nav-link">Blog</a>
+                <a href="Contact.html" class="nav-link">Contact</a>
+                <a href="Login.html" class="nav-link"><i class="fa-regular fa-user"></i></a>
+                <a href="Store.html" class="nav-link"><i class="fa-solid fa-cart-shopping"></i></a>
+            </nav>
+            <i class="fa-solid fa-bars bars"></i>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Sidebar for Mobile -->
+    <div class="sidebar" id="sidebar">
+        <a href="#" class="sidebar-close" id="sidebarCloseBtn">&times;</a>
+        <a href="index.html" class="sidebar-link">Home</a>
+        <a href="Shop.html" class="sidebar-link">Shop</a>
+        <a href="About.html" class="sidebar-link">About Us</a>
+        <a href="Services.html" class="sidebar-link">Services</a>
+        <a href="Blog.html" class="sidebar-link">Blog</a>
+        <a href="Contact.html" class="sidebar-link">Contact</a>
+        <a href="Login.html" class="sidebar-link"><i class="fa-regular fa-user"></i> Account</a>
+        <a href="Store.html" class="sidebar-link"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-section">
+        <!--======= Hero Section Start =====-->
+       <div class="hero-section">
+           <div class="hero-inner">
+              <div class="max-width">
+            <div class="overlay-outer">
+              <div class="overlay">
+                <h1 class="hero-heading">Checkout</h1>
+               
+               
+              </div>
+             
+            </div>
+ 
+        </div>
+           </div>
+      
+          
+       </div>
+
+        <!--======= Hero Section End =====-->
+
+  <section class="checkout-section">
+    <div class="checkout-container">
+
+      <div class="checkout-top">
+        <p>Returning customer? <a href="Login.html">Click here</a> to login</p>
+      </div>
+
+      <div class="checkout-grid">
+
+        <!-- Billing Details -->
+        <div class="billing-details">
+          <h2>Billing Details</h2>
+
+          <form>
+            <label>Country *</label>
+            <select>
+              <option>Select a country</option>
+              <option>India</option>
+              <option>USA</option>
+              <option>UK</option>
+            </select>
+
+            <div class="two-columns">
+              <div>
+                <label>First Name *</label>
+                <input type="text">
+              </div>
+              <div>
+                <label>Last Name *</label>
+                <input type="text">
+              </div>
+            </div>
+
+            <label>Company Name</label>
+            <input type="text">
+
+            <label>Address *</label>
+            <input type="text" placeholder="Street address">
+            <input type="text" placeholder="Apartment, suite, unit etc. (optional)">
+
+            <div class="two-columns">
+              <div>
+                <label>State / Country *</label>
+                <input type="text">
+              </div>
+              <div>
+                <label>Post / Zip *</label>
+                <input type="text">
+              </div>
+            </div>
+
+            <div class="two-columns">
+              <div>
+                <label>Email Address *</label>
+                <input type="email">
+              </div>
+              <div>
+                <label>Phone *</label>
+                <input type="tel">
+              </div>
+            </div>
+
+            <div class="checkbox-group">
+              <label><input type="checkbox"> Create an account?</label>
+              <label><input type="checkbox"> Ship to a different address?</label>
+            </div>
+
+            <label>Order Notes</label>
+            <textarea placeholder="Write your notes here..."></textarea>
+          </form>
+        </div>
+
+        <!-- Coupon + Order -->
+        <div class="order-details">
+
+          <!-- Coupon Code -->
+          <div class="coupon-code">
+            <h2>Coupon Code</h2>
+            <p>Enter your coupon code if you have one</p>
+            <div class="coupon-input">
+              <input type="text" placeholder="Coupon Code">
+              <button type="button"><a href="Checkout.html" style="color: white;">Apply</a></button>
+            </div>
+          </div>
+
+          <!-- Your Order -->
+          <div class="your-order">
+            <h2>Your Order</h2>
+            <table>
+              <tr>
+                <th>Product</th>
+                <th>Total</th>
+              </tr>
+              <tr>
+                <td>Top Up T-Shirt × 1</td>
+                <td>$250.00</td>
+              </tr>
+              <tr>
+                <td>Polo Shirt × 1</td>
+                <td>$100.00</td>
+              </tr>
+              <tr class="subtotal">
+                <td>Cart Subtotal</td>
+                <td>$350.00</td>
+              </tr>
+              <tr class="total">
+                <td><strong>Order Total</strong></td>
+                <td><strong>$350.00</strong></td>
+              </tr>
+            </table>
+
+            <div class="payment-methods">
+              <button type="button">Direct Bank Transfer</button>
+              <button type="button">Cheque Payment</button>
+              <button type="button">PayPal</button>
+            </div>
+
+            <button class="place-order"><a href="Completepay.html" style="color: white; text-decoration:none">Place Order</a></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+    <!-- ===== Newsletter Section Start ===== -->
+<section class="newsletter-section">
+  <div class="newsletter-container">
+    <div class="newsletter-content">
+      <h3><i class="fa-regular fa-envelope"></i> Subscribe to Newsletter</h3>
+      <form action="#">
+        <input type="text" placeholder="Enter your name" required>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+
+    <div class="newsletter-image">
+      <img src="image/opi2.png" alt="Chair">
+    </div>
+  </div>
+</section>
+<!-- ===== Newsletter Section End ===== -->
+       
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="upperfooter">
+            <div class="max-width">
+                <div class="footer-inner">
+                    <div class="footer-content footer-brand">
+                        <div class="logo">
+                            <a class="logo-link" href="index.html">
+                                  <span>Tiwari</span><span>F<i class="fa-solid fa-couch"></i>rnit<i class="fa-solid fa-couch"></i>re </span>
+                            </a>
+
+                        </div>
+                        <p>Furniture enhances the beauty and functionality of any space. From stylish sofas and ergonomic chairs to elegant dining tables, wardrobes, and office desks, quality furniture offers comfort, durability, and design. Whether modern or classic, the right pieces reflect your personality and create a warm, inviting atmosphere in every room</p>
+                        <div class="footer-social-icon">
+                            <div class="icon">
+                                 <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="icon">
+                                 <i class="fa-brands  fa-linkedin "></i>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>               
+                            
+                           
+                            
+                        </div>
+                    </div>
+                    <div class="footer-content quick-link">
+                        <h3>Quick Links</h3>
+                        <a href="About.html" class="f-link">About </a>
+                        <a href="Services.html" class="f-link">Services</a>
+                        <a href="BLog.html" class="f-link">Blog</a>
+                        <a href="Contact.html" class="f-link">Contact</a>
+                        <a href="Sitemap.html" class="f-link">Site Map</a>
+                    </div>
+                    <div class="footer-content quick-support">
+                        <h3>Quick Support</h3>
+                        <a href="support.html" class="f-link">Support</a>
+                        <a href="Sitemap.html" class="f-link">Knowledge base</a>
+                        <a href="Contact.html" class="f-link">Live chat</a>
+                    </div>
+                    <div class="footer-content quick-updates">
+                        <h3 >Quick Updates</h3>
+                        <a href="nakuri.com" class="f-link">Jobs</a>
+                        <a href="indiatoday.com" class="f-link">News</a>
+                        <a href="techsima.in" class="f-link">Our team</a>
+                        <a href="lead.html" class="f-link">Leadership</a>
+                        <a href="login.html" class="f-link">Privacy Policy</a>
+                    </div>
+                    <div class="footer-content address-info">
+                        <h3>Address Info.</h3>
+                        <address><i class="fa-solid fa-location-dot"></i>In front of Rajarshi Dashrath Rajkiya Medical College, Darshan Nagar, Kushmaha, Ayodhya, Uttar Pradesh 224135</address>
+                        <a href="mailto:techsimatraining@gmail.com"><i class="fa-solid fa-envelope"></i>techsimatraining@gmail.com</a>
+                        <a href="tel:7800050976"><i class="fa-solid fa-phone"></i>+91 7800050976</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+<!-- Footer End-->
+<!-- bFooter Start-->
+ <div class="bFooter">
+  <div class="max-width">
+    <div class="bFooter-inner">
+      <div class="bFooter-left">
+        <p>
+          Copyright ©2025. All Rights Reserved. — 
+          Designed with ❤️ by <a href="#">Himanshu Tiwari</a> 
+          | Distributed By <a href="#">Techsima Solution Private Limited</a>
+        </p>
+      </div>
+      <div class="bFooter-right">
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- bFooter End-->
+    <!-- JS -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

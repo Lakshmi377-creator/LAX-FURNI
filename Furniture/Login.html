@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/login.css">
+<link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/owl.carousel.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+</head>
+
+<body>
+ <div class="loader">
+    <div class="spinner"></div>
+    <p class="loading-text">Loading...</p>
+  </div>
+    <!-- Header Start -->
+    <header class="header" id="header">
+        <div class="max-width header-inner">
+            <div class="logo">
+                <a class="logo-link" href="index.html">
+                                                                    <span>lax</span>f<i class="fa-solid fa-couch" style="color: palevioletred;"></i>rTech
+
+
+  
+                </a>
+            </div>
+            <nav class="navbar">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="Shop.html" class="nav-link">Shop</a>
+                <a href="About.html" class="nav-link">About Us</a>
+                <a href="Services.html" class="nav-link">Services</a>
+                <a href="Blog.html" class="nav-link">Blog</a>
+                <a href="Contact.html" class="nav-link">Contact</a>
+                <a href="Login.html" class="nav-link"><i class="fa-regular fa-user"></i></a>
+                <a href="Store.html" class="nav-link"><i class="fa-solid fa-cart-shopping"></i></a>
+            </nav>
+            <i class="fa-solid fa-bars bars"></i>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Sidebar for Mobile -->
+    <div class="sidebar" id="sidebar">
+        <a href="#" class="sidebar-close" id="sidebarCloseBtn">&times;</a>
+        <a href="index.html" class="sidebar-link">Home</a>
+        <a href="Shop.html" class="sidebar-link">Shop</a>
+        <a href="About.html" class="sidebar-link">About Us</a>
+        <a href="Services.html" class="sidebar-link">Services</a>
+        <a href="Blog.html" class="sidebar-link">Blog</a>
+        <a href="Contact.html" class="sidebar-link">Contact</a>
+        <a href="Login.html" class="sidebar-link"><i class="fa-regular fa-user"></i> Account</a>
+        <a href="Store.html" class="sidebar-link"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-section">
+        <!--======= Hero Section Start =====-->
+       <div class="hero-section">
+           <div class="hero-inner">
+              <div class="max-width">
+            <div class="overlay-outer">
+              <div class="overlay">
+                <h1 class="hero-heading">Login</h1>
+                
+               
+              </div>
+             
+            </div>
+ 
+        </div>
+           </div>
+      
+          
+       </div>
+
+        <!--======= Hero Section End =====-->
+    <div class="outer">
+            <div class="login">
+                <h1>Login Form</h1>
+                <!-- onsubmit=" validateForm()" -->
+                <form id="loginForm">
+                    <input type="email" id="email" class="full-width" placeholder="Enter Email"><br>
+                    <div class="password-box">
+                        <input type="password" id="password"  class="full-width" placeholder="Enter Password">
+                        <i class="fa-solid fa-eye show-password" onclick="passwordShow()"></i>
+                    </div><br>
+                    <!-- <input type="text" id="captcha" placeholder="Captcha"> -->
+                     <span id="captcha">hjytvl</span>
+                    <button type="button" id="refresh" onclick="generateCaptcha()"><i class="fa-solid fa-arrows-rotate"></i></button>
+                    <input type="text" placeholder="Enter Captcha" id="matchCaptcha">
+
+                    <input type="submit" value="Login" class="submit-btn" onclick="submit(event)">
+                    
+ <p>Don't have an account? <a href="Register.html">Register</a></p>
+
+                </form>
+               
+            </div>
+    </div>
+      <!-- ===== Newsletter Section Start ===== -->
+<section class="newsletter-section">
+  <div class="newsletter-container">
+    <div class="newsletter-content">
+      <h3><i class="fa-regular fa-envelope"></i> Subscribe to Newsletter</h3>
+      <form action="#">
+        <input type="text" placeholder="Enter your name" required>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+
+    <div class="newsletter-image">
+      <img src="image/opi2.png" alt="Chair">
+    </div>
+  </div>
+</section>
+<!-- ===== Newsletter Section End ===== -->
+       
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="upperfooter">
+            <div class="max-width">
+                <div class="footer-inner">
+                    <div class="footer-content footer-brand">
+                        <div class="logo">
+                            <a class="logo-link" href="index.html">
+                                                                                <span>lax</span>f<i class="fa-solid fa-couch" style="color: palevioletred;"></i>rTech
+
+
+                            </a>
+
+                        </div>
+                        <p>Furniture enhances the beauty and functionality of any space. From stylish sofas and ergonomic chairs to elegant dining tables, wardrobes, and office desks, quality furniture offers comfort, durability, and design. Whether modern or classic, the right pieces reflect your personality and create a warm, inviting atmosphere in every room</p>
+                        <div class="footer-social-icon">
+                            <div class="icon">
+                                 <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="icon">
+                                 <i class="fa-brands  fa-linkedin "></i>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>               
+                            
+                           
+                            
+                        </div>
+                    </div>
+                    <div class="footer-content quick-link">
+                        <h3>Quick Links</h3>
+                        <a href="About.html" class="f-link">About </a>
+                        <a href="Services.html" class="f-link">Services</a>
+                        <a href="BLog.html" class="f-link">Blog</a>
+                        <a href="Contact.html" class="f-link">Contact</a>
+                        <a href="Sitemap.html" class="f-link">Site Map</a>
+                    </div>
+                    <div class="footer-content quick-support">
+                        <h3>Quick Support</h3>
+                        <a href="support.html" class="f-link">Support</a>
+                        <a href="Sitemap.html" class="f-link">Knowledge base</a>
+                        <a href="Contact.html" class="f-link">Live chat</a>
+                    </div>
+                    <div class="footer-content quick-updates">
+                        <h3 >Quick Updates</h3>
+                        <a href="nakuri.com" class="f-link">Jobs</a>
+                        <a href="indiatoday.com" class="f-link">News</a>
+                        <a href="techsima.in" class="f-link">Our team</a>
+                        <a href="lead.html" class="f-link">Leadership</a>
+                        <a href="login.html" class="f-link">Privacy Policy</a>
+                    </div>
+                    <div class="footer-content address-info">
+                        <h3>Address Info.</h3>
+                        <address><i class="fa-solid fa-location-dot"></i>In front of Rajarshi Dashrath Rajkiya Medical College, Darshan Nagar, Kushmaha, Ayodhya, Uttar Pradesh 224135</address>
+                        <a href="mailto:techsimatraining@gmail.com"><i class="fa-solid fa-envelope"></i>techsimatraining@gmail.com</a>
+                        <a href="tel:7800050976"><i class="fa-solid fa-phone"></i>+91 7800050976</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+<!-- Footer End-->
+<!-- bFooter Start-->
+ <div class="bFooter">
+  <div class="max-width">
+    <div class="bFooter-inner">
+      <div class="bFooter-left">
+        <p>
+          Copyright ©2025. All Rights Reserved. — 
+          Designed with ❤️ by <a href="#">Lakshmi Tiwari</a> 
+          | Distributed By <a href="#">Techsima Solution Private Limited</a>
+        </p>
+      </div>
+      <div class="bFooter-right">
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- bFooter End-->
+    <!-- JS -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

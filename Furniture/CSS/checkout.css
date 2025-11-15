@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f5f8f7;
+  color: #333;
+}
+
+.checkout-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.checkout-container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.checkout-top {
+  background: #f0f3f2;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+.checkout-top a {
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.checkout-grid {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr;
+  gap: 30px;
+}
+
+.billing-details, .order-details {
+  background: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.billing-details h2, .order-details h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #222;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 14px;
+}
+form input, form select, form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.two-columns {
+  display: flex;
+  gap: 10px;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.coupon-code {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+}
+
+.coupon-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.coupon-input input {
+  flex: 1;
+}
+
+.coupon-input button {
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.your-order table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.your-order th, .your-order td {
+  padding: 8px 0;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.subtotal td {
+  font-weight: 600;
+}
+.total td {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.payment-methods button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.payment-methods button:hover {
+  background: #f0f0f0;
+}
+
+.place-order {
+  width: 100%;
+  background: #222;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.place-order:hover {
+  background: #000;
+}
+
+

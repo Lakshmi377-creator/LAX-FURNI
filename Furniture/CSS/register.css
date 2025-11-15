@@ -1,0 +1,128 @@
+   *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body{
+        height: 100vh;
+        background: linear-gradient(135deg, #4e54c8, #8f94fb);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .register-container{
+        width: 400px;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        padding: 40px 30px;
+        color: #fff;
+    }
+
+    h2{
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+
+    .form-group{
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    input, select{
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        background: rgba(255,255,255,0.2);
+        color: #fff;
+        font-size: 15px;
+    }
+
+    input::placeholder, select{
+        color: rgba(255,255,255,0.8);
+    }
+
+    .password-box i{
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .captcha-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    #captcha-text{
+        background: rgba(255,255,255,0.3);
+        padding: 10px 15px;
+        border-radius: 8px;
+        letter-spacing: 3px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    #refresh{
+        background: #00d2ff;
+        border: none;
+        color: white;
+        padding: 8px 14px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    #refresh:hover{
+        background: #05b1e7;
+    }
+
+    .btn-link{
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        background: #00d2ff;
+        color: white;
+        font-weight: bold;
+        padding: 12px 0;
+        border-radius: 8px;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    .btn-link:hover{
+        background: #05b1e7;
+        transform: scale(1.02);
+    }
+
+    p{
+        text-align: center;
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    a{
+        color: #00d2ff;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+
+    /* ✅ Responsive */
+    @media (max-width: 480px){
+        
+    }
