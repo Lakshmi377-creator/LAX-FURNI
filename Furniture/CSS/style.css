@@ -759,7 +759,7 @@ a{
 
 .owl-nav .owl-prev:hover,
 .owl-nav .owl-next:hover {
-  background: #d35400 !important;
+  background:var(--primary-color) !important;
   transform: scale(1.1);
 }
 
